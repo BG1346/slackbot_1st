@@ -29,7 +29,7 @@ public class CommandParsingServiceTest {
                 friendDataBase, "time").equalsIgnoreCase("Current Time: " + new Date().toString()));
     }
     @Test
-    public void removeCommandExecuteAndReturnMessageWithFriendName() {
+    public void executeRemoveCommandAndReturnSuccessMessage() {
         assertTrue(commandParsingService.parsingCommand(
                 friendDataBase, "remove hangeul").equalsIgnoreCase("hangeul is removed successfully!"));
     }
